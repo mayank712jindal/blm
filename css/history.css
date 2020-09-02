@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  height: auto;
+}
+div.nav-bar-container {
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  padding-top:10px;
+}
+ul.nav-bar li {
+  list-style:none;
+  margin-top:30px;  
+}
+ul.nav-bar li:nth-child(1) {
+  float: left;
+  margin-top: 0px;
+}
+ul.nav-bar li {
+  float: right;
+  padding:5px;
+  margin-left: 20px;
+}
+ul.nav-bar li:nth-child(2) {
+  margin-right: 50px;
+}
+ul.nav-bar li a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul.nav-bar li:nth-child(6) a{
+  color:#ffa008;
+  text-decoration:none;
+  font-weight: bold;
+}
+ul.nav-bar li:hover{
+  transform: scale(1.1);
+}
+
+.container {
+  position: relative;
+  background-color: black;
+}
+.image-container {
+
+  width: 20%;
+  margin: auto;
+  padding-top: 150px;
+}
+.image-container-foundation {
+  width: 40%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.text-container {
+  text-align: center;
+  padding:30px 0px;
+  width: 90%;
+  margin: auto;
+  line-height:2;
+}
+.text-container h1 {
+  color: #ffa008;
+  text-align: center;
+}
+.text-container p {
+  color:white;
+}
+ion-icon {
+  font-size:20px;
+  text-align: center;
+}
+.down-arrow a img {
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin:auto;
+  padding:20px 0px;
+}
+#violence-against-african {
+  display: none;
+  padding-top:150px;
+}
+
+
+.margin
+{
+	margin-top : 10px;
+}
+.parallex
+	{
+    background: url(../images/founder.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+		background-attachment: fixed;
+	}
+.parallex-inner
+	{
+    padding: 200px 0px;
+      
+  }
+.parallex-inner-inner {
+    /* background-color: black; */
+    padding:10px;
+    opacity: 90%;
+}
+ @media only screen and (max-width: 600px){
+.nav-bar li {
+    font-size: 1.5vw;
+    margin: 0;
+  }
+  .nav-bar li:nth-child(1) {
+    display: none;
+    margin: 0;
+  }
+ }

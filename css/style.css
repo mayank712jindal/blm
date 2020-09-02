@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: "Oswald", Sans-serif;
+  text-transform: uppercase;
+  height: auto;
+}
+div.nav-bar-container {
+  z-index: 1;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  padding-top:10px;
+}
+ul.nav-bar li {
+  list-style:none;
+  margin-top:30px;  
+}
+ul.nav-bar li:nth-child(1) {
+  float: left;
+  margin-top: 0px;
+}
+ul.nav-bar li {
+  float: right;
+  padding:5px;
+  margin-left: 20px;
+}
+ul.nav-bar li:nth-child(2) {
+  margin-right: 50px;
+}
+ul.nav-bar li a {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul.nav-bar li:nth-child(6) a{
+  color:#ffa008;
+  text-decoration:none;
+  font-weight: bold;
+}
+ul.nav-bar li:hover{
+  transform: scale(1.1);
+}
+
+.landing-image img {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.quotes {
+  position: relative;
+  margin:100px 0px;
+  text-align: center;
+}
+.quotes q{
+  
+  font-size: 4vw;
+  
+}
+
+.parallex-inner h4{
+  text-align:center;
+  margin: 10px 0px;
+  font-size:3.5vw;
+  color: #ffa008;
+}
+.parallex-inner p {
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 1.5vw;
+  /* margin:20px 0px; */
+  color:white ;
+  line-height: 2;
+}
+
+.margin
+{
+	margin-top : 10px;
+}
+.parallex
+	{
+    background: url(https://images.unsplash.com/photo-1592331492689-5a833239ed01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+		background-attachment: fixed;
+	}
+.parallex-inner
+	{
+    padding: 200px 0px;
+      
+  }
+.parallex-inner-inner {
+    background-color: black;
+    padding:10px;
+    opacity: 90%;
+}
+.footer {
+  position: relative;
+  background-color: #121111;
+  width: 100%;
+  display:inline-block;
+  /* padding:20px; */
+}
+.footer-inner-elements {
+  display: flex;
+}
+.subscribe-letter {
+  width: 32%;
+  float: right;
+  border-left:1px solid #ffa008;
+  padding-left: 20px;
+  display: inline-block;
+  margin: 20px;
+}
+.subscribe-letter h3 {
+  color:#ffa008;
+  font-weight: 600;
+}
+.fields {
+  padding:10px;
+  margin:15px 0px;
+  width: 75%;
+  border:none; 
+}
+#submit-button {
+  border:none;
+  margin-top: 15px;
+  padding:10px;
+  width: 30%;
+  border-radius: 5px;
+  background-color: black;
+  color:#ffa008;
+  font-weight: 500;
+}
+.copyright {
+  background-color: #ffa008;
+  color:black;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+  margin:0;
+}
+.copyright h4 {
+  margin: 0;
+}
+.footer-inner{
+    width: 55%;
+  float: left;
+  padding-left: 20px;
+  display: inline;
+  margin: 20px;
+}
+.footer-inner-element{
+  float: left;
+   display: inline-block;
+   width: 25%;
+   line-height: 2;
+}
+.footer-inner-element ul li{
+    list-style-type: none;
+    text-transform: none;
+}
+.footer-inner-element ul li a{
+   text-decoration: none;
+   color:white;
+}
+.socialmedia{
+  width: 100%;
+  float: right;
+  text-align: center;
+}
+.socialmedia h3 {
+  color:#ffa008;
+  padding:5px 0px;
+  font-size:3.5vw; 
+}
+.social-container img {
+  box-shadow: 0px 0px 10px 5px grey;
+  padding:10px 10px;
+  border-radius: 50%;
+  margin:20px 5px;
+}
+
+/* landing */
+
+@media only screen and (max-width: 600px) {
+  
+  .quotes{
+    margin: 20px 0px;
+  }
+  .parallex-inner{
+    padding:35px 0px;
+  }
+  .parallex-inner p{
+    margin-top: 10px;
+    font-size:2vw;
+  }
+  .quotes cite{
+    font-size: 1.5vw;
+  }
+  .footer-inner{
+    float: none;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+  }
+  .footer-inner-element{
+    text-align: center;
+    width: 24%;
+    line-height: 1.5;
+    padding-top: 10px;
+  }
+  .subscribe-letter{
+    float: none;
+    width: 90%;
+    border-left: none;
+    padding-left: 0px;
+  }
+  .subscribe-letter input{
+    display: block;
+    margin: auto;
+  }
+  .subscribe-letter h3{
+    margin-bottom: 10px;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .footer-inner-element h4{
+    color:#ffa008;
+    font-size: 3.5vw;
+  }
+  .copyright h4{
+    font-size: 3vw;
+  }
+  .footer-inner-element ul li{
+    font-size:2.8vw;
+  }
+  #submit-button{
+    margin-top:0;
+  }
+.nav-bar li {
+    font-size: 1.5vw;
+    margin: 0;
+  }
+  .nav-bar li:nth-child(1) {
+    display: none;
+    margin: 0;
+  }
+}
